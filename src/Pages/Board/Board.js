@@ -44,7 +44,7 @@ function onDrop(e, laneId) {
                 title={lane.title}
                 loading={loading}
                 error={errorMessage}
-                tasks={data.filter((task) => {
+                tasks={task.filter((task) => {
                     return task.lane === lane.id
                 })}
                 laneId = {lane.id}
